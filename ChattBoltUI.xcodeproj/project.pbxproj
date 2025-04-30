@@ -16,6 +16,8 @@
 		8D397CFB2DC0CBB300A63E15 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D397CFA2DC0CBB300A63E15 /* Dashboard.swift */; };
 		8D397CFD2DC0CBD200A63E15 /* DahboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D397CFC2DC0CBD200A63E15 /* DahboardViewModel.swift */; };
 		8D397CFF2DC0CC1D00A63E15 /* DefaultBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D397CFE2DC0CC1D00A63E15 /* DefaultBg.swift */; };
+		8D397D032DC1E68700A63E15 /* ChattMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D397D022DC1E68700A63E15 /* ChattMessage.swift */; };
+		8D397D052DC1EAE200A63E15 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D397D042DC1EAE200A63E15 /* ProfileInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		8D397CFA2DC0CBB300A63E15 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		8D397CFC2DC0CBD200A63E15 /* DahboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DahboardViewModel.swift; sourceTree = "<group>"; };
 		8D397CFE2DC0CC1D00A63E15 /* DefaultBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBg.swift; sourceTree = "<group>"; };
+		8D397D022DC1E68700A63E15 /* ChattMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattMessage.swift; sourceTree = "<group>"; };
+		8D397D042DC1EAE200A63E15 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				8D397CE32DC0C8E300A63E15 /* ChattBoltUIApp.swift */,
 				8D397CFA2DC0CBB300A63E15 /* Dashboard.swift */,
 				8D397CFC2DC0CBD200A63E15 /* DahboardViewModel.swift */,
+				8D397D012DC1E66F00A63E15 /* Models */,
 				8D397CF12DC0C8F100A63E15 /* Utilities */,
 				8D397CE72DC0C8E500A63E15 /* Assets.xcassets */,
 				8D397CE92DC0C8E500A63E15 /* Preview Content */,
@@ -82,12 +87,29 @@
 		8D397CF12DC0C8F100A63E15 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				8D397CF22DC0C90600A63E15 /* MessagesView.swift */,
 				8D397CF42DC0C93900A63E15 /* MockData.swift */,
-				8D397CF82DC0CA6000A63E15 /* MessageView.swift */,
 				8D397CFE2DC0CC1D00A63E15 /* DefaultBg.swift */,
+				8D397D002DC1E56A00A63E15 /* Interfaces */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8D397D002DC1E56A00A63E15 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				8D397CF22DC0C90600A63E15 /* MessagesView.swift */,
+				8D397CF82DC0CA6000A63E15 /* MessageView.swift */,
+				8D397D042DC1EAE200A63E15 /* ProfileInfo.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		8D397D012DC1E66F00A63E15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D397D022DC1E68700A63E15 /* ChattMessage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +185,11 @@
 				8D397CF52DC0C93900A63E15 /* MockData.swift in Sources */,
 				8D397CFD2DC0CBD200A63E15 /* DahboardViewModel.swift in Sources */,
 				8D397CE42DC0C8E300A63E15 /* ChattBoltUIApp.swift in Sources */,
+				8D397D052DC1EAE200A63E15 /* ProfileInfo.swift in Sources */,
 				8D397CF32DC0C90600A63E15 /* MessagesView.swift in Sources */,
 				8D397CFF2DC0CC1D00A63E15 /* DefaultBg.swift in Sources */,
 				8D397CFB2DC0CBB300A63E15 /* Dashboard.swift in Sources */,
+				8D397D032DC1E68700A63E15 /* ChattMessage.swift in Sources */,
 				8D397CF92DC0CA6000A63E15 /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

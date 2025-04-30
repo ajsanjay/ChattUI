@@ -9,6 +9,7 @@ import Foundation
 
 class DashboardViewModel: ObservableObject {
     
-    @Published var chatMsg: [String] = MockData.defaultMessage
+    @Published var chattConversation: [ChattMessage] = MockData.defaultMessage
+    @Published var chattMsg: String = ""
     
 }
