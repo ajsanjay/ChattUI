@@ -41,13 +41,14 @@ struct BubbleText: View {
     
     var body: some View {
         Text(message)
+            .font(.title3)
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 0)
                     .fill(isSent ? .msgSent.opacity(0.2) : .msgReceived.opacity(0.3))
                     .shadow(color: .black.opacity(0.7), radius: 8, x: 10, y: 10)
             )
-            .foregroundColor(isSent ? .black : .white)
+            .foregroundColor(.black)
             .cornerRadius(16)
     }
 }

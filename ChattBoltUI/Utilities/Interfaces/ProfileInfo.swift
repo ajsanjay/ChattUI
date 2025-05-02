@@ -15,6 +15,8 @@ struct ProfileInfo: View {
         HStack {
             InitialsView(initials: "MB")
             Text(personName)
+                .font(.title2)
+                .fontWeight(.medium)
             Spacer()
         }
         .padding()
@@ -31,9 +33,10 @@ struct InitialsView: View {
     
     var body: some View {
         Text(initials)
-            .font(.headline)
+            .font(.title2)
+            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             .foregroundColor(.white)
-            .frame(width: 40, height: 40)
+            .frame(width: 50, height: 50)
             .background(Circle().fill(Color.blue))
     }
 }
